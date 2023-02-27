@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "id": "7198ddf7-e9be-4034-8791-6650a50a8dab",
+    "username": "ibrohim",
+    "email": "ibrohim@gmail.com",
+    "password": "$2a$12$TN0iHQTqzROLNYZHfQwZc.Odb1jm9i2h.p9V7CcY5Xtcj3iaSZBvO"
+  },
+  {
+    "id": "af5041bb-9f98-46c0-afd9-8c51988dca9a",
+    "username": "www",
+    "email": "www@gmail.com",
+    "password": "$2a$12$fUPSv6RdqoToe6puUoLzT.vXezS6/efIyPqfiuaWCbeEWw307rJr2"
+  },
+  {
+    "id": "46fdf5aa-a90e-430a-a414-73747481137f",
+    "username": "ggg",
+    "email": "ggg@gmail.com",
+    "password": "$2a$12$5Xemt5hQYQFkm8P47j7wK.IpJsc9DqJpTXdCphBSfP69is.7KkC8K"
+  }
+]
