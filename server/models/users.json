@@ -16,5 +16,11 @@
     "username": "ggg",
     "email": "ggg@gmail.com",
     "password": "$2a$12$5Xemt5hQYQFkm8P47j7wK.IpJsc9DqJpTXdCphBSfP69is.7KkC8K"
+  },
+  {
+    "id": "7c599faf-b986-4508-a525-49c4815d3e88",
+    "username": "xxx",
+    "email": "xxx@gmail.com",
+    "password": "$2a$12$F/dLR0wUJdOF.k6NpODRc.l6vQVfE0Gu5sI/W9fR2LOavPqskbGgG"
   }
 ]

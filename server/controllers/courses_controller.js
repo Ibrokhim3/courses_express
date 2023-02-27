@@ -5,9 +5,14 @@ const userData = read_file("jwt.json");
 
 let Course = {
   GET: (req, res) => {
+    let courses = read_file("courses.json");
+    res.send(courses);
+  },
+  GET: (req, res) => {
     let { id } = userData[0];
 
-    let courses = read_file("courses.json");
-    courses.find();
+    let courses = read_file("courses.json").filter((user) => user.id === id);
   },
 };
+
+module.exports = Course;

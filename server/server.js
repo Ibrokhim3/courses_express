@@ -2,6 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 
+const coursesRouter = require("./routes/courses_router");
 const authRouter = require("./routes/auth_router");
 const authMiddleware = require("./middlewares/auth_middleware");
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(authRouter);
+app.use(coursesRouter);
 
 app.use(authMiddleware);
 
