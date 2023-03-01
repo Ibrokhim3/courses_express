@@ -1,3 +1,58 @@
-[{
-  "title": "courses"
-}]
+[
+  {
+    "id": "cfd8bb04-697f-40ca-8093-01702f3d7e1b",
+    "user_id": "64c2ce4f-a2f7-45d0-9270-4f05dd440513",
+    "title": "XYZ",
+    "price": "10.000$",
+    "author": "Hellojon"
+  },
+  {
+    "id": "76a66732-1412-49da-81e0-2237de14a572",
+    "user_id": "c38bcacc-5573-49ee-9f7e-d253ab2cfee7",
+    "title": "sss",
+    "price": "15.000$",
+    "author": "Fey"
+  },
+  {
+    "id": "55066ed3-2c75-4dcb-9673-8c1d7d43b8b9",
+    "user_id": "c38bcacc-5573-49ee-9f7e-d253ab2cfee7",
+    "title": "sss",
+    "price": "15.000$",
+    "author": "Fey"
+  },
+  {
+    "id": "89c4ff37-2950-4511-a8e2-a285472483c5",
+    "user_id": "96b456a7-0414-4513-99b8-f0b43a3343bb",
+    "title": "sss",
+    "price": "15.000$",
+    "author": "Fey"
+  },
+  {
+    "id": "a59b37bb-6590-4edf-80b7-47e70701e1fc",
+    "user_id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
+    "title": "sss",
+    "price": "15.000$",
+    "author": "Fey"
+  },
+  {
+    "id": "2914e6d3-012c-46f8-8ef7-31443960da40",
+    "user_id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
+    "title": "sss",
+    "price": "15.000$",
+    "author": "Fey"
+  },
+  {
+    "id": "f93c503b-246d-4eba-b60b-8068dcad21c2",
+    "user_id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
+    "title": "dgsfdhf",
+    "price": "15.dgsfdhf$",
+    "author": "dgsfdhf"
+  },
+  {
+    "id": "55c9def8-2ea0-41c2-9915-dd95e8645c14",
+    "user_id": "dff361ba-52b2-4a72-81b4-cb04980c67e3",
+    "title": "dgsfdhf",
+    "price": "15.dgsfdhf$",
+    "author": "dgsfdhf"
+  }
+]

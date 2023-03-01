@@ -10,7 +10,7 @@ module.exports = async function (req, res, next) {
 
     write_file("jwt.json", usersInfoArray);
 
-    next();
+    next(); // keyingi middleware ga otkazish uchun
   } else {
     return res.send({
       msg: "Token doesn't exist",

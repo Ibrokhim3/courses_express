@@ -1,7 +1,8 @@
 const bcrypt = require("bcryptjs");
 const { v4 } = require("uuid");
-const { read_file, write_file } = require("../fs/fs_api");
 const jwt = require("jsonwebtoken");
+const { read_file, write_file } = require("../fs/fs_api");
+const userData = read_file("jwt.json");
 
 const Auth = {
   REGISTER: async (req, res) => {
@@ -36,6 +37,7 @@ const Auth = {
     });
   },
   LOGIN: async (req, res) => {
+    let { id } = userData[0];
     const { password, email } = req.body;
 
     const users = read_file("users.json");

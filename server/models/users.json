@@ -6,21 +6,27 @@
     "password": "$2a$12$TN0iHQTqzROLNYZHfQwZc.Odb1jm9i2h.p9V7CcY5Xtcj3iaSZBvO"
   },
   {
-    "id": "af5041bb-9f98-46c0-afd9-8c51988dca9a",
-    "username": "www",
-    "email": "www@gmail.com",
-    "password": "$2a$12$fUPSv6RdqoToe6puUoLzT.vXezS6/efIyPqfiuaWCbeEWw307rJr2"
+    "id": "c38bcacc-5573-49ee-9f7e-d253ab2cfee7",
+    "username": "abi",
+    "email": "abi@gmail.com",
+    "password": "$2a$12$FI6VjBgoHOnyQpoRbmcVQehNknfXjBczF1wonbiuKQGpuME.9YxZ6"
   },
   {
-    "id": "46fdf5aa-a90e-430a-a414-73747481137f",
-    "username": "ggg",
-    "email": "ggg@gmail.com",
-    "password": "$2a$12$5Xemt5hQYQFkm8P47j7wK.IpJsc9DqJpTXdCphBSfP69is.7KkC8K"
+    "id": "96b456a7-0414-4513-99b8-f0b43a3343bb",
+    "username": "usomn",
+    "email": "usomn@gmail.com",
+    "password": "$2a$12$swJ5XHacfMAN316YTOZOyepiPTYR0QnKS.vtdV1/A45G8abhwSElG"
   },
   {
-    "id": "7c599faf-b986-4508-a525-49c4815d3e88",
-    "username": "xxx",
-    "email": "xxx@gmail.com",
-    "password": "$2a$12$F/dLR0wUJdOF.k6NpODRc.l6vQVfE0Gu5sI/W9fR2LOavPqskbGgG"
+    "id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
+    "username": "sher",
+    "email": "sher@gmail.com",
+    "password": "$2a$12$ElGktgq.LUgmU99GC.nYp.e8W.s7KKyqbkAeWJ5gUJXDYsP.mZ0Gq"
+  },
+  {
+    "id": "dff361ba-52b2-4a72-81b4-cb04980c67e3",
+    "username": "hey",
+    "email": "hey@gmail.com",
+    "password": "$2a$12$Z9exm7sKDxRxkAZsC65aT.LsrRjrutSN0ycKExkCq0Sx36e4IIfd6"
   }
 ]

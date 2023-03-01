@@ -8,10 +8,63 @@ let Course = {
     let courses = read_file("courses.json");
     res.send(courses);
   },
-  GET: (req, res) => {
+  GET_BY_USER: (req, res) => {
     let { id } = userData[0];
 
-    let courses = read_file("courses.json").filter((user) => user.id === id);
+    let courses = read_file("courses.json").filter(
+      (user) => user.user_id === id
+    );
+
+    res.status(200).json(courses);
+  },
+  CREATE: async (req, res) => {
+    try {
+      const { title, price, author } = req.body;
+      const { id } = userData[0];
+
+      let courses = read_file("courses.json");
+
+      courses.push({
+        id: v4(),
+        user_id: id,
+        title,
+        price,
+        author,
+      });
+
+      write_file("courses.json", courses);
+      res.status(201).json(courses);
+    } catch (error) {
+      res.send(error.message);
+    }
+  },
+  UPDATE: (req, res) => {
+    const { title, price, author } = req.body;
+    let courses = read_file("courses.json");
+
+    courses.forEach((course) => {
+      if (course.id === req.params.id) {
+        course.title = title ? title : course.title;
+        course.price = price ? price : course.price;
+        course.author = author ? author : course.author;
+      }
+    });
+    write_file("courses.json", courses);
+    res.send({
+      msg: "Course was updated",
+    });
+  },
+  DELETE: (req, res) => {
+    let courses = read_file("courses.json");
+    courses.forEach((course, idx) => {
+      if (course.id === req.params.id) {
+        courses.splice(idx, 1);
+      }
+    });
+    write_file("courses.json", courses);
+    res.status(200).send({
+      msg: "Course was deleted",
+    });
   },
 };
 
