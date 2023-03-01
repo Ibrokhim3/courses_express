@@ -18,25 +18,21 @@ let Course = {
     res.status(200).json(courses);
   },
   CREATE: async (req, res) => {
-    try {
-      const { title, price, author } = req.body;
-      const { id } = userData[0];
+    const { title, price, author } = req.body;
+    const { id } = userData[0];
 
-      let courses = read_file("courses.json");
+    let courses = read_file("courses.json");
 
-      courses.push({
-        id: v4(),
-        user_id: id,
-        title,
-        price,
-        author,
-      });
+    courses.push({
+      id: v4(),
+      user_id: id,
+      title,
+      price,
+      author,
+    });
 
-      write_file("courses.json", courses);
-      res.status(201).json(courses);
-    } catch (error) {
-      res.send(error.message);
-    }
+    write_file("courses.json", courses);
+    res.status(201).json(courses);
   },
   UPDATE: (req, res) => {
     const { title, price, author } = req.body;
@@ -62,7 +58,7 @@ let Course = {
       }
     });
     write_file("courses.json", courses);
-    res.status(200).send({
+    res.status(200).json({
       msg: "Course was deleted",
     });
   },

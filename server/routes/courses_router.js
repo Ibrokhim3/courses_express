@@ -1,5 +1,6 @@
 const { Router } = require("express");
 const CoursesCtr = require("../controllers/courses_controller");
+const AuthMdl = require("../middlewares/auth_middleware");
 
 let router = Router();
 

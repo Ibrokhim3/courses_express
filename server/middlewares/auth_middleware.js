@@ -8,9 +8,9 @@ module.exports = async function (req, res, next) {
     let usersInfoArray = read_file("jwt.json");
     usersInfoArray[0] = userInfo;
 
-    write_file("jwt.json", usersInfoArray);
+    // write_file("jwt.json", usersInfoArray);
 
-    next(); // keyingi middleware ga otkazish uchun
+    await next(); // keyingi middleware ga otkazish uchun
   } else {
     return res.send({
       msg: "Token doesn't exist",

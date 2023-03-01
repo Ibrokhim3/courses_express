@@ -1,58 +1,51 @@
 [
   {
-    "id": "cfd8bb04-697f-40ca-8093-01702f3d7e1b",
-    "user_id": "64c2ce4f-a2f7-45d0-9270-4f05dd440513",
-    "title": "XYZ",
-    "price": "10.000$",
-    "author": "Hellojon"
-  },
-  {
-    "id": "76a66732-1412-49da-81e0-2237de14a572",
-    "user_id": "c38bcacc-5573-49ee-9f7e-d253ab2cfee7",
+    "id": "93d143fe-ef16-4d9f-8d23-705e44d288e5",
+    "user_id": "0fd5d385-fa9b-4ab3-a7e6-60e3fbfdd99f",
     "title": "sss",
-    "price": "15.000$",
-    "author": "Fey"
+    "price": "15.ss$",
+    "author": "ss"
   },
   {
-    "id": "55066ed3-2c75-4dcb-9673-8c1d7d43b8b9",
-    "user_id": "c38bcacc-5573-49ee-9f7e-d253ab2cfee7",
+    "id": "e71f67d6-39a6-4ec5-bbc2-2e096a5478e8",
+    "user_id": "0fd5d385-fa9b-4ab3-a7e6-60e3fbfdd99f",
     "title": "sss",
-    "price": "15.000$",
-    "author": "Fey"
+    "price": "15.ss$",
+    "author": "ss"
   },
   {
-    "id": "89c4ff37-2950-4511-a8e2-a285472483c5",
-    "user_id": "96b456a7-0414-4513-99b8-f0b43a3343bb",
+    "id": "bdeed0a2-c2f3-44ee-800a-409634cd4cb3",
+    "user_id": "a142266c-428e-41aa-9630-52e2cd6e25e3",
     "title": "sss",
-    "price": "15.000$",
-    "author": "Fey"
+    "price": "15.ss$",
+    "author": "ss"
   },
   {
-    "id": "a59b37bb-6590-4edf-80b7-47e70701e1fc",
-    "user_id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
+    "id": "b3c7d935-9081-4abb-b253-a276ad4e8944",
+    "user_id": "6ffa5cce-2bde-43b5-9c57-759f491c2141",
     "title": "sss",
-    "price": "15.000$",
-    "author": "Fey"
+    "price": "15.ss$",
+    "author": "ss"
   },
   {
-    "id": "2914e6d3-012c-46f8-8ef7-31443960da40",
-    "user_id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
+    "id": "8031a61a-7c54-45a9-8020-f544d1a98498",
+    "user_id": "6ffa5cce-2bde-43b5-9c57-759f491c2141",
     "title": "sss",
-    "price": "15.000$",
-    "author": "Fey"
+    "price": "15.ss$",
+    "author": "ss"
   },
   {
-    "id": "f93c503b-246d-4eba-b60b-8068dcad21c2",
-    "user_id": "5579041a-1ddd-4dcc-aef9-269d521a849b",
-    "title": "dgsfdhf",
-    "price": "15.dgsfdhf$",
-    "author": "dgsfdhf"
+    "id": "03d63b4c-6490-476f-be3a-a904e5445bfe",
+    "user_id": "5e2aa3a2-803a-4fd3-a47c-72abbb15afc5",
+    "title": "sss",
+    "price": "15.ss$",
+    "author": "ss"
   },
   {
-    "id": "55c9def8-2ea0-41c2-9915-dd95e8645c14",
-    "user_id": "dff361ba-52b2-4a72-81b4-cb04980c67e3",
-    "title": "dgsfdhf",
-    "price": "15.dgsfdhf$",
-    "author": "dgsfdhf"
+    "id": "5fb48be6-daac-4410-a18c-efb681a9cfa8",
+    "user_id": "e25f535d-2c28-4818-9610-645d1037d0ee",
+    "title": "sss",
+    "price": "15.ss$",
+    "author": "ss"
   }
 ]

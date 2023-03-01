@@ -37,7 +37,6 @@ const Auth = {
     });
   },
   LOGIN: async (req, res) => {
-    let { id } = userData[0];
     const { password, email } = req.body;
 
     const users = read_file("users.json");
@@ -61,11 +60,17 @@ const Auth = {
           expiresIn: process.env.JWT_TIME,
         }
       );
+      let gen_token = jwt.verify(token, process.env.SECRET_KEY);
+      let users_arr = read_file("jwt.json");
+      users_arr[0] = gen_token;
+      write_file("jwt.json", users_arr);
+
       return res.send({
         msg: "You're logged in",
         token,
       });
     }
+
     res.send({ msg: "Password is incorrect" });
   },
 };
