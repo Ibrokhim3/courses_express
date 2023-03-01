@@ -15,7 +15,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use(authRouter);
-app.use(authMiddleware);
+// app.use(authMiddleware);
 app.use(coursesRouter);
 
 app.listen(PORT, () => {

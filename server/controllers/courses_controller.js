@@ -5,8 +5,9 @@ const userData = read_file("jwt.json");
 
 let Course = {
   GET: (req, res) => {
-    let courses = read_file("courses.json");
-    res.send(courses);
+      let courses = read_file("courses.json");
+      res.send(courses);
+ 
   },
   GET_BY_USER: (req, res) => {
     let { id } = userData[0];
@@ -56,10 +57,10 @@ let Course = {
       if (course.id === req.params.id) {
         courses.splice(idx, 1);
       }
-    });
-    write_file("courses.json", courses);
-    res.status(200).json({
-      msg: "Course was deleted",
+      write_file("courses.json", courses);
+      res.status(200).json({
+        msg: "Course was deleted",
+      });
     });
   },
 };
