@@ -1,19 +1,14 @@
 const jwt = require("jsonwebtoken");
 const { read_file, write_file } = require("../fs/fs_api");
+const userData = read_file("jwt.json");
 
 module.exports = async function (req, res, next) {
-  if (req.headers.token) {
-    let userInfo = await jwt.verify(req.headers.token, process.env.SECRET_KEY);
-
-    let usersInfoArray = read_file("jwt.json");
-    usersInfoArray[0] = userInfo;
-
-    // write_file("jwt.json", usersInfoArray);
-
-    next(); // keyingi middleware ga otkazish uchun
+  let userToken = userData[1];
+  if (req.headers.token && req.headers.token === userToken) {
+    next();
   } else {
     return res.send({
-      msg: "Token doesn't exist",
+      msg: "Token doesn't exist or you are not authorized !",
     });
   }
 };

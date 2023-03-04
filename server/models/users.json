@@ -1,50 +1,26 @@
 [
   {
-    "id": "0fd5d385-fa9b-4ab3-a7e6-60e3fbfdd99f",
-    "username": "vvv",
-    "email": "vvv@gmail.com",
-    "password": "$2a$12$dDDRyt36E0gaIfBziSkWO.goW9Lc65xfT/0RybZ9Wqr7EnsVLBSUG"
+    "id": "5ff4c0ab-5437-43aa-9387-5446e96e0705",
+    "username": "admin",
+    "email": "admin@gmail.com",
+    "password": "$2a$12$9CqHf05mwyE4XOEDvCkQye5Cgd4dvWqa0iYxB0hEdsyhuJ52OGVmK"
   },
   {
-    "id": "a142266c-428e-41aa-9630-52e2cd6e25e3",
-    "username": "chchch",
-    "email": "chchch@gmail.com",
-    "password": "$2a$12$V2yOrrcMNI7lJ19jqLgjQ./NzSNYL1AmWQRCE5WbzvGyt0OGgdKpq"
+    "id": "0e9eaab8-8e0a-4064-94a7-a503364be7fd",
+    "username": "zadmin",
+    "email": "zadmin@gmail.com",
+    "password": "$2a$12$ai36Sj2wTjdxNCCGxkTi1ec9dOJHss.pom6GdHChQMfiKym6HErRi"
   },
   {
-    "id": "6ffa5cce-2bde-43b5-9c57-759f491c2141",
-    "username": "ggg",
-    "email": "ggg@gmail.com",
-    "password": "$2a$12$KCum/DBcq/Y1m4aoOsVvOOerMo0lT/xYhQbllk/6wZPXi0QT.K1qK"
+    "id": "930bb2db-eed8-4444-8344-5931eda11309",
+    "username": "sadmin",
+    "email": "sadmin@gmail.com",
+    "password": "$2a$12$/0ns8.NYsJcytObfSCnxTOxC5eijnmuZpFyo8fNRofTTSqm3WCWEy"
   },
   {
-    "id": "df332be8-2917-45ec-b9cc-85fdfe39eba1",
-    "username": "lll",
-    "email": "lll@gmail.com",
-    "password": "$2a$12$tiVZIXxxty4TFVmjgUqi2Oa8VSONNepBsCh2ppcFT/UpiA4EzWCaK"
-  },
-  {
-    "id": "e82497c3-100f-4da0-963a-7ec7348398f4",
-    "username": "imron",
-    "email": "imron@gmail.com",
-    "password": "$2a$12$fg/t/7GixD/aFkPDan4LieJEGVXdyZglZtPqN5g85sChuW0pxYpEK"
-  },
-  {
-    "id": "5e2aa3a2-803a-4fd3-a47c-72abbb15afc5",
-    "username": "fey",
-    "email": "fey@gmail.com",
-    "password": "$2a$12$6sN1WGX6H4QGMI6HVUCO0OSMWohElQV0muzbfcDGPisClVg0GGv5i"
-  },
-  {
-    "id": "e25f535d-2c28-4818-9610-645d1037d0ee",
-    "username": "shell",
-    "email": "shell@gmail.com",
-    "password": "$2a$12$V246rm8/jkgwHDkO4BalkOuAkyTxd1tOCbIkHJXcViZEcqJ5UI5N6"
-  },
-  {
-    "id": "4c22d303-c567-4ff3-b366-086bc6d391cb",
-    "username": "fiskal ",
-    "email": "fiskal@gmail.com",
-    "password": "$2a$12$M9FzH2vEo31B2HwizWJQ5O218NDMeZADL04KC9A2bmqUkFDRAdyV6"
+    "id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "username": "chadmin",
+    "email": "chadmin@gmail.com",
+    "password": "$2a$12$5.jvffHEj7AvELPVB5tjLuU1qF83BVGE4N2/E8f5AlPJPQDuPSame"
   }
 ]

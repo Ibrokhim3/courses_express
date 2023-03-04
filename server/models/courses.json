@@ -1,58 +1,42 @@
 [
   {
-    "id": "93d143fe-ef16-4d9f-8d23-705e44d288e5",
-    "user_id": "0fd5d385-fa9b-4ab3-a7e6-60e3fbfdd99f",
-    "title": "sss",
-    "price": "15.ss$",
-    "author": "ss"
+    "id": "7e7a0b5d-06fd-44d4-ab3b-c62a80f4cc47",
+    "user_id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "course_img": "1677909098903.png"
   },
   {
-    "id": "e71f67d6-39a6-4ec5-bbc2-2e096a5478e8",
-    "user_id": "0fd5d385-fa9b-4ab3-a7e6-60e3fbfdd99f",
-    "title": "sss",
-    "price": "15.ss$",
-    "author": "ss"
+    "id": "5c27e4a1-893b-4969-8394-daefff08d556",
+    "user_id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "title": "desdes",
+    "price": "30,000$",
+    "author": "can"
   },
   {
-    "id": "bdeed0a2-c2f3-44ee-800a-409634cd4cb3",
-    "user_id": "a142266c-428e-41aa-9630-52e2cd6e25e3",
-    "title": "sss",
-    "price": "15.ss$",
-    "author": "ss"
+    "id": "2b32c64b-11c9-4bf1-a7a0-a3703e1da1e2",
+    "user_id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "title": "desdes",
+    "price": "30,000$",
+    "author": "can"
   },
   {
-    "id": "b3c7d935-9081-4abb-b253-a276ad4e8944",
-    "user_id": "6ffa5cce-2bde-43b5-9c57-759f491c2141",
-    "title": "sss",
-    "price": "15.ss$",
-    "author": "ss"
+    "id": "2a592ed1-4d7a-4a96-b15e-958c5f5311dd",
+    "user_id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "title": "desdes",
+    "price": "30,000$",
+    "author": "can"
   },
   {
-    "id": "8031a61a-7c54-45a9-8020-f544d1a98498",
-    "user_id": "6ffa5cce-2bde-43b5-9c57-759f491c2141",
-    "title": "sss",
-    "price": "15.ss$",
-    "author": "ss"
+    "id": "57bac549-633b-41b0-9b95-468592f1fe44",
+    "user_id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "title": "desdes",
+    "price": "30,000$",
+    "author": "can"
   },
   {
-    "id": "03d63b4c-6490-476f-be3a-a904e5445bfe",
-    "user_id": "5e2aa3a2-803a-4fd3-a47c-72abbb15afc5",
-    "title": "sss",
-    "price": "15.ss$",
-    "author": "ss"
-  },
-  {
-    "id": "0b5ce166-180d-4e74-8ba3-f61c2709d072",
-    "user_id": "4c22d303-c567-4ff3-b366-086bc6d391cb",
-    "title": "new",
-    "price": "15",
-    "author": "new"
-  },
-  {
-    "id": "ed67da66-3b82-45a2-807f-2c3abd437be3",
-    "user_id": "4c22d303-c567-4ff3-b366-086bc6d391cb",
-    "title": "byd lhan",
-    "price": "40,000$",
-    "author": "china"
+    "id": "3db67609-ad72-4f62-b7ec-f92f5ff9c077",
+    "user_id": "bf59ff2a-5931-4026-bd5f-ddcb10a876ac",
+    "title": "desdes",
+    "price": "30,000$",
+    "author": "can"
   }
 ]

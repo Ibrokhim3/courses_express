@@ -9,11 +9,11 @@ const Auth = {
     const { username, email, vEmail, password } = req.body;
 
     let users = read_file("users.json");
-    let foundedUser = users.find((user) => user.email === email);
+    let foundedUser = users.find((user) => user.username === username);
 
     if (foundedUser) {
       return res.send({
-        msg: "Email already exist",
+        msg: "This username already exist",
       });
     }
 
@@ -37,10 +37,10 @@ const Auth = {
     });
   },
   LOGIN: async (req, res) => {
-    const { password, email } = req.body;
+    const { password, username } = req.body;
 
     const users = read_file("users.json");
-    const foundedUser = users.find((user) => user.email === email);
+    const foundedUser = users.find((user) => user.username === username);
 
     if (!foundedUser) {
       return res.status(404).send({
@@ -50,19 +50,24 @@ const Auth = {
 
     let psw = await bcrypt.compare(password, foundedUser.password);
     if (psw) {
+      // let userToken = read_file("jwt.json");
+      // console.log(userToken);
       let token = await jwt.sign(
         {
           id: foundedUser.id,
-          email: foundedUser.email,
+          username: foundedUser.username,
         },
         process.env.SECRET_KEY,
         {
           expiresIn: process.env.JWT_TIME,
         }
       );
+      // let jwtToken = read_file("jwt.json");
+
       let gen_token = jwt.verify(token, process.env.SECRET_KEY);
       let users_arr = read_file("jwt.json");
       users_arr[0] = gen_token;
+      users_arr[1] = token;
       write_file("jwt.json", users_arr);
 
       return res.send({
