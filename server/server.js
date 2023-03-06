@@ -5,6 +5,7 @@ const dotenv = require("dotenv");
 const authRouter = require("./routes/auth_router");
 const authMiddleware = require("./middlewares/auth_middleware"); //routerlardan tepada turish kerak
 const coursesRouter = require("./routes/courses_router");
+
 const fileUpload = require("express-fileupload");
 
 dotenv.config();

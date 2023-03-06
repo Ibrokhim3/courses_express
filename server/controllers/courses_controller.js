@@ -2,21 +2,29 @@ const { v4 } = require("uuid");
 const { read_file, write_file } = require("../fs/fs_api");
 const userData = read_file("jwt.json");
 const path = require("path");
-const upload = require("express-fileupload");
+
 
 let Course = {
   GET: (req, res) => {
-    let courses = read_file("courses.json");
-    res.send(courses);
+    try {
+      let courses = read_file("courses.json");
+      res.send(courses);
+    } catch (error) {
+      return console.log(error.message);
+    }
   },
   GET_BY_USER: (req, res) => {
-    let { id } = userData[0];
+    try {
+      let { id } = userData[0];
 
-    let courses = read_file("courses.json").filter(
-      (user) => user.user_id === id
-    );
+      let courses = read_file("courses.json").filter(
+        (user) => user.user_id === id
+      );
 
-    res.status(200).json(courses);
+      res.status(200).json(courses);
+    } catch (error) {
+      return console.log(error.message);
+    }
   },
   // CREATE: async (req, res) => {
   //   const { title, price, author } = req.body;
@@ -39,17 +47,16 @@ let Course = {
   //   return res.send({ msg: "Please add title, price and author" });
   // },
   CREATE: async (req, res) => {
-    let { title, price, author } = req.body;
-
-    if (title && price && author) {
-      // let file = req.files.image;
-
+    try {
       const { id } = userData[0];
+      let { title, price, author } = req.body;
+      if (req.files == undefined || !title || !price || !author) {
+        return res.send({ msg: "Please fill the form!" });
+      }
+      let file = req.files.image;
 
-      // let filename = Date.now() + path.extname(file.name);
-      // file.mv(path.resolve("upload_file/" + filename));
-
-      // console.log(filename);
+      let filename = Date.now() + path.extname(file.name);
+      file.mv(path.resolve("upload_file/" + filename));
 
       let courses = read_file("courses.json");
 
@@ -59,91 +66,106 @@ let Course = {
         title,
         price,
         author,
-        // course_img: filename,
+        course_img: filename,
       });
 
       write_file("courses.json", courses);
       return res.status(201).json(courses);
+    } catch (error) {
+      return console.log(error.message);
     }
-    return res.send({ msg: "Please add title, price and author" });
   },
-  // CREATE: async (req, res) => {
+  // UPDATE: (req, res) => {
   //   try {
-  //     let { title, price, author } = req.body;
-  //     let file = req.files;
+  //     const { id } = userData[0];
+  //     const { title, price, author } = req.body;
 
-  //     if (title === "" && price === "" && author === "" && file === undefined) {
-  //       return res.send({ msg: "Please add title, price and author" });
-  //     } else if (title && price && author && file) {
-  //       const { id } = userData[0];
+  //     let courses = read_file("courses.json");
 
-  //       let filename = Date.now() + path.extname(file.name);
-  //       file.mv(path.resolve("upload_file/" + filename));
+  //     let foundedCourse = courses.find((course) => course.id === req.params.id);
 
-  //       let courses = read_file("courses.json");
-
-  //       courses.push({
-  //         id: v4(),
-  //         user_id: id,
-  //         title,
-  //         price,
-  //         author,
-  //         course_img: filename,
+  //     if (!foundedCourse) {
+  //       return res.send({
+  //         msg: "Course was not found",
   //       });
-
-  //       write_file("courses.json", courses);
-  //       return res.status(201).json(courses);
   //     }
+
+  //     courses.forEach((course) => {
+  //       if (course.id === req.params.id) {
+  //         course.title = title ? title : course.title;
+  //         course.price = price ? price : course.price;
+  //         course.author = author ? author : course.author;
+
+  //         write_file("courses.json", courses);
+  //         return res.send({
+  //           msg: "Course was updated",
+  //         });
+  //       }
+  //     });
   //   } catch (error) {
   //     return console.log(error.message);
   //   }
   // },
   UPDATE: (req, res) => {
-    const { id } = userData[0];
-    const { title, price, author } = req.body;
+    try {
+      const { id } = userData[0];
+      const { title, price, author } = req.body;
 
-    let courses = read_file("courses.json");
+      let courses = read_file("courses.json");
 
-    let foundedCourse = courses.find((course) => course.id === req.params.id);
+      let foundedCourse = courses.find((course) => course.id === req.params.id);
 
-    if (!foundedCourse) {
-      return res.send({
-        msg: "Course was not found",
-      });
-    }
-
-    courses.forEach((course) => {
-      if (course.id === req.params.id) {
-        course.title = title ? title : course.title;
-        course.price = price ? price : course.price;
-        course.author = author ? author : course.author;
-
-        write_file("courses.json", courses);
+      if (!foundedCourse) {
         return res.send({
-          msg: "Course was updated",
+          msg: "Course was not found",
         });
       }
-    });
+
+      let file = req.files.image;
+      // let filename = Date.now() + path.extname(file.name);
+
+      file.mv(path.resolve("upload_file/" + file.name));
+
+      courses.forEach((course) => {
+        if (course.id === req.params.id) {
+          course.title = title ? title : course.title;
+          course.price = price ? price : course.price;
+          course.author = author ? author : course.author;
+          course.course_img = file.name ? file.name : course.course_img;
+
+          write_file("courses.json", courses);
+          return res.send({
+            msg: "Course was updated",
+          });
+        }
+      });
+    } catch (error) {
+      return console.log(error.message);
+    }
   },
   DELETE: (req, res) => {
-    const { id } = userData[0];
-    let courses = read_file("courses.json");
-    let foundedCourse = courses.find((course) => course.id === req.params.id);
-    if (!foundedCourse) {
-      return res.send({
-        msg: "Course was not found",
-      });
-    }
-    courses.forEach((course, idx) => {
-      if (course.id === req.params.id) {
-        courses.splice(idx, 1);
+    try {
+      const { id } = userData[0];
+      let courses = read_file("courses.json");
+      let foundedCourse = courses.find((course) => course.id === req.params.id);
+      if (!foundedCourse) {
+        return res.send({
+          msg: "Course was not found",
+        });
       }
-    });
-    write_file("courses.json", courses);
+      courses.forEach((course, idx) => {
+        if (course.id === req.params.id) {
+          courses.splice(idx, 1);
+        }
+      });
+      write_file("courses.json", courses);
 
-    return res.send({
-      msg: "Course was deleted",
-    });
+      return res.send({
+        msg: "Course was deleted",
+      });
+    } catch (error) {
+      return console.log(error.message);
+    }
   },
 
   UPLOAD_FILE: (req, res) => {
