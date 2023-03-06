@@ -2,9 +2,46 @@ POST http://localhost:3003/register
 Content-Type: application/json
 
 {
-"username": "ale",
-"email": "aldgmail.com",
-"vEmail": "aldgmail.com",
+"username": "alish",
+"email": "alish@gmail.com",
+"vEmail": "alish@gmail.com",
 "password": "aldsds232"
 
 }
+
+###
+POST http://localhost:3003/login
+Content-Type: application/json
+
+{
+"username": "alish",
+"email": "alish@gmail.com",
+"vEmail": "alish@gmail.com",
+"password": "aldsds232"
+
+}
+
+###
+
+GET http://localhost:3003/courses
+
+###
+
+GET http://localhost:3003/get_one_course/f89ebd5e-f493-43fb-aff5-7230a2ef37b4
+
+###
+
+POST http://localhost:3003/create_course
+Content-Type: application/json
+Token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI4N2VkYTUwLWYzYTctNGRiNy05NzkyLWU0NTYxZGJhMjY0NCIsInVzZXJuYW1lIjoiYWxpc2giLCJpYXQiOjE2NzgwODI0MTQsImV4cCI6MTY3ODA4NDIxNH0.E3ruosdA5ma014gMq1Q8d3slyqaBeSNDkCDmPAHtRWc
+
+{
+"title": "sss",
+    "price": "1000",
+    "author": "me"
+}
+
+
+###
+
+DELETE  http://localhost:3003/delete_course/f89ebd5e-f493-43fb-aff5-7230a2ef37b4

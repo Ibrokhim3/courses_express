@@ -2,7 +2,7 @@ const { v4 } = require("uuid");
 const { read_file, write_file } = require("../fs/fs_api");
 const userData = read_file("jwt.json");
 const path = require("path");
-
+const { readFile } = require("fs/promises");
 
 let Course = {
   GET: (req, res) => {
@@ -25,6 +25,19 @@ let Course = {
     } catch (error) {
       return console.log(error.message);
     }
+  },
+  GET_ONE: (req, res) => {
+    let { id } = userData[0];
+    let courses = read_file("courses.json");
+
+    let foundedCourse = courses.find((course) => course.id === req.params.id);
+
+    if (!foundedCourse || foundedCourse.user_id !== id) {
+      return res.send({
+        msg: "Course was not found",
+      });
+    }
+    res.status(200).json(foundedCourse);
   },
   // CREATE: async (req, res) => {
   //   const { title, price, author } = req.body;

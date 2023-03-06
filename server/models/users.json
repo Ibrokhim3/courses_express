@@ -22,5 +22,17 @@
     "username": "ale",
     "email": "al@gmail.com",
     "password": "$2a$12$NpqHflb9quNhO5Uik1ryeuevHWEwAScXGCIQxuuS8wRz9g2Z2FnJ."
+  },
+  {
+    "id": "287eda50-f3a7-4db7-9792-e4561dba2644",
+    "username": "alish",
+    "email": "alish@gmail.com",
+    "password": "$2a$12$9MQOkmm7l8eLhu2NfKZOyO1BqiycxOapVH7pC2RRQZJUmLqODLEoy"
+  },
+  {
+    "id": "6f7ddc40-ea34-4e78-b440-cb541ebd6c92",
+    "username": "hi_admin",
+    "email": "hi_admin@gmail.com",
+    "password": "$2a$12$.nPR6Ui2TsBvXmvVoHUvJ.MXk4lVWKczdmhyeQk7SxOOUz.sOmU3C"
   }
 ]

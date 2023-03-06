@@ -14,5 +14,21 @@
     "price": "1000",
     "author": "me",
     "course_img": "1677948896372.png"
+  },
+  {
+    "id": "f8410cba-729a-4ebc-8bf1-95b7146c2651",
+    "user_id": "6f7ddc40-ea34-4e78-b440-cb541ebd6c92",
+    "title": "something",
+    "price": "101",
+    "author": "Yours",
+    "course_img": "new-nodejs.png"
+  },
+  {
+    "id": "117f5cb8-ab74-488d-b95e-01e741ac949f",
+    "user_id": "6f7ddc40-ea34-4e78-b440-cb541ebd6c92",
+    "title": "item",
+    "price": "500",
+    "author": "item",
+    "course_img": "1678086252085.png"
   }
 ]
