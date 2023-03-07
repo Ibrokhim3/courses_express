@@ -30,5 +30,13 @@
     "price": "500",
     "author": "item",
     "course_img": "1678086252085.png"
+  },
+  {
+    "id": "26424499-f781-4ffd-87e8-740a62734a83",
+    "user_id": "ce4faa74-c30b-48d4-b895-0bfad186d611",
+    "title": "item",
+    "price": "500",
+    "author": "item",
+    "course_img": "1678122821579.png"
   }
 ]
