@@ -40,12 +40,12 @@ router.post("/register", userValidate, AuthCtr.REGISTER);
 /**
  * @swagger
  * tags:
- *   name: Courses
+ *   name: Registration
  *   description: The users managing API
  * /register:
  *   post:
  *     summary: User registration
- *     tags: [Courses]
+ *     tags: [Registration]
  *     requestBody:
  *       required: true
  *       content:
@@ -90,12 +90,12 @@ router.post("/login", AuthCtr.LOGIN);
 /**
  * @swagger
  * tags:
- *   name: Courses
+ *   name: Registration
  *   description: The users managing API
  * /login:
  *   post:
  *     summary: User login
- *     tags: [Courses]
+ *     tags: [Registration]
  *     requestBody:
  *       required: true
  *       content:
